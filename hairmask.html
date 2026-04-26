@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hair Mask Collection</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5;}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 25px;background:white;box-shadow:0 5px 15px rgba(0,0,0,0.08);}
+.navbar a{text-decoration:none;color:#333;font-weight:bold;margin-left:10px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;padding:40px;max-width:1200px;margin:auto;}
+.product{background:white;border-radius:15px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.08);}
+.product img{width:100%;height:170px;object-fit:cover;}
+.info{padding:12px;}
+button{width:100%;padding:10px;border:none;background:black;color:white;cursor:pointer;}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div><b>🫧 Hair Mask Collection</b></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="checkout.html">Cart 🛒 (<span id="count">0</span>)</a>
+  </div>
+</div>
+
+<div class="grid">
+
+<div class="product"><img src="images/mask1.jpg"><div class="info"><h3>Protein Nourishing Hair Mask</h3><button onclick="addToCart('Protein Mask',9)">Add</button></div></div>
+<div class="product"><img src="images/mask2.jpg"><div class="info"><h3>Collagen Repair Mask</h3><button onclick="addToCart('Collagen Mask',9)">Add</button></div></div>
+<div class="product"><img src="images/mask3.jpg"><div class="info"><h3>Biotin Strength Mask</h3><button onclick="addToCart('Biotin Mask',9)">Add</button></div></div>
+<div class="product"><img src="images/mask4.jpg"><div class="info"><h3>Black Seed Oil Mask</h3><button onclick="addToCart('Black Seed Mask',10)">Add</button></div></div>
+<div class="product"><img src="images/mask5.jpg"><div class="info"><h3>Moroccan Oil Hair Mask</h3><button onclick="addToCart('Moroccan Mask',11)">Add</button></div></div>
+
+<div class="product"><img src="images/mask6.jpg"><div class="info"><h3>Anti Dandruff Mask</h3><button onclick="addToCart('Anti Dandruff Mask',7)">Add</button></div></div>
+<div class="product"><img src="images/mask7.jpg"><div class="info"><h3>Hair Loss Control Mask</h3><button onclick="addToCart('Hair Loss Mask',10)">Add</button></div></div>
+<div class="product"><img src="images/mask8.jpg"><div class="info"><h3>Batana Oil Hair Mask</h3><button onclick="addToCart('Batana Mask',12)">Add</button></div></div>
+<div class="product"><img src="images/mask9.jpg"><div class="info"><h3>Color Protect Mask</h3><button onclick="addToCart('Color Mask',9)">Add</button></div></div>
+<div class="product"><img src="images/mask10.jpg"><div class="info"><h3>Repair Extreme Mask</h3><button onclick="addToCart('Repair Mask',11)">Add</button></div></div>
+
+<div class="product"><img src="images/mask11.jpg"><div class="info"><h3>Keratin Deep Mask</h3><button onclick="addToCart('Keratin Mask',10)">Add</button></div></div>
+<div class="product"><img src="images/mask12.jpg"><div class="info"><h3>Hydrating Hair Mask</h3><button onclick="addToCart('Hydrating Mask',8)">Add</button></div></div>
+<div class="product"><img src="images/mask13.jpg"><div class="info"><h3>Macadamia Repair Mask</h3><button onclick="addToCart('Macadamia Mask',10)">Add</button></div></div>
+<div class="product"><img src="images/mask14.jpg"><div class="info"><h3>Argan Oil Mask</h3><button onclick="addToCart('Argan Mask',11)">Add</button></div></div>
+<div class="product"><img src="images/mask15.jpg"><div class="info"><h3>Soothing Hair Mask</h3><button onclick="addToCart('Soothing Mask',8)">Add</button></div></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hair Serum Collection</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5;}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 25px;background:white;box-shadow:0 5px 15px rgba(0,0,0,0.08);}
+.navbar a{text-decoration:none;color:#333;font-weight:bold;margin-left:10px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;padding:40px;max-width:1200px;margin:auto;}
+.product{background:white;border-radius:15px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.08);}
+.product img{width:100%;height:170px;object-fit:cover;}
+.info{padding:12px;}
+button{width:100%;padding:10px;border:none;background:black;color:white;cursor:pointer;}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div><b>✨ Hair Serum Collection</b></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="checkout.html">Cart 🛒 (<span id="count">0</span>)</a>
+  </div>
+</div>
+
+<div class="grid">
+
+<div class="product"><img src="images/serum1.jpg"><div class="info"><h3>Protein Nourishing Hair Serum</h3><button onclick="addToCart('Protein Serum',8)">Add</button></div></div>
+<div class="product"><img src="images/serum2.jpg"><div class="info"><h3>Collagen Repair Serum</h3><button onclick="addToCart('Collagen Serum',9)">Add</button></div></div>
+<div class="product"><img src="images/serum3.jpg"><div class="info"><h3>Biotin Strength Serum</h3><button onclick="addToCart('Biotin Serum',9)">Add</button></div></div>
+<div class="product"><img src="images/serum4.jpg"><div class="info"><h3>Black Seed Oil Serum</h3><button onclick="addToCart('Black Seed Serum',10)">Add</button></div></div>
+<div class="product"><img src="images/serum5.jpg"><div class="info"><h3>Moroccan Oil Serum</h3><button onclick="addToCart('Moroccan Serum',11)">Add</button></div></div>
+
+<div class="product"><img src="images/serum6.jpg"><div class="info"><h3>Anti Frizz Serum</h3><button onclick="addToCart('Frizz Serum',7)">Add</button></div></div>
+<div class="product"><img src="images/serum7.jpg"><div class="info"><h3>Hair Growth Serum</h3><button onclick="addToCart('Growth Serum',10)">Add</button></div></div>
+<div class="product"><img src="images/serum8.jpg"><div class="info"><h3>Batana Oil Serum</h3><button onclick="addToCart('Batana Serum',12)">Add</button></div></div>
+<div class="product"><img src="images/serum9.jpg"><div class="info"><h3>Color Protect Serum</h3><button onclick="addToCart('Color Serum',9)">Add</button></div></div>
+<div class="product"><img src="images/serum10.jpg"><div class="info"><h3>Repair Extreme Serum</h3><button onclick="addToCart('Repair Serum',11)">Add</button></div></div>
+
+<div class="product"><img src="images/serum11.jpg"><div class="info"><h3>Keratin Smooth Serum</h3><button onclick="addToCart('Keratin Serum',10)">Add</button></div></div>
+<div class="product"><img src="images/serum12.jpg"><div class="info"><h3>Hydrating Serum</h3><button onclick="addToCart('Hydrating Serum',8)">Add</button></div></div>
+<div class="product"><img src="images/serum13.jpg"><div class="info"><h3>Macadamia Shine Serum</h3><button onclick="addToCart('Macadamia Serum',10)">Add</button></div></div>
+<div class="product"><img src="images/serum14.jpg"><div class="info"><h3>Argan Oil Serum</h3><button onclick="addToCart('Argan Serum',11)">Add</button></div></div>
+<div class="product"><img src="images/serum15.jpg"><div class="info"><h3>Soothing Hair Serum</h3><button onclick="addToCart('Soothing Serum',8)">Add</button></div></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

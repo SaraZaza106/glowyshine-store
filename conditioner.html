@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Conditioner Collection</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5;}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 25px;background:white;box-shadow:0 5px 15px rgba(0,0,0,0.08);}
+.navbar a{text-decoration:none;color:#333;font-weight:bold;margin-left:10px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;padding:40px;max-width:1200px;margin:auto;}
+.product{background:white;border-radius:15px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.08);}
+.product img{width:100%;height:170px;object-fit:cover;}
+.info{padding:12px;}
+button{width:100%;padding:10px;border:none;background:black;color:white;cursor:pointer;}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div><b>💆‍♀️ Conditioner Collection</b></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="checkout.html">Cart 🛒 (<span id="count">0</span>)</a>
+  </div>
+</div>
+
+<div class="grid">
+
+<div class="product"><img src="images/cond1.jpg"><div class="info"><h3>Protein Nourishing Conditioner</h3><button onclick="addToCart('Protein Nourishing Conditioner',8)">Add</button></div></div>
+<div class="product"><img src="images/cond2.jpg"><div class="info"><h3>Collagen Repair Conditioner</h3><button onclick="addToCart('Collagen Repair Conditioner',9)">Add</button></div></div>
+<div class="product"><img src="images/cond3.jpg"><div class="info"><h3>Biotin Strength Conditioner</h3><button onclick="addToCart('Biotin Strength Conditioner',9)">Add</button></div></div>
+<div class="product"><img src="images/cond4.jpg"><div class="info"><h3>Black Seed Oil Conditioner</h3><button onclick="addToCart('Black Seed Oil Conditioner',10)">Add</button></div></div>
+<div class="product"><img src="images/cond5.jpg"><div class="info"><h3>Moroccan Oil Hair Conditioner</h3><button onclick="addToCart('Moroccan Oil Conditioner',11)">Add</button></div></div>
+
+<div class="product"><img src="images/cond6.jpg"><div class="info"><h3>Anti Dandruff Conditioner</h3><button onclick="addToCart('Anti Dandruff Conditioner',7)">Add</button></div></div>
+<div class="product"><img src="images/cond7.jpg"><div class="info"><h3>Hair Loss Control Conditioner</h3><button onclick="addToCart('Hair Loss Conditioner',10)">Add</button></div></div>
+<div class="product"><img src="images/cond8.jpg"><div class="info"><h3>Batana Oil Conditioner</h3><button onclick="addToCart('Batana Oil Conditioner',12)">Add</button></div></div>
+<div class="product"><img src="images/cond9.jpg"><div class="info"><h3>Color Protect Conditioner</h3><button onclick="addToCart('Color Protect Conditioner',9)">Add</button></div></div>
+<div class="product"><img src="images/cond10.jpg"><div class="info"><h3>Repair Extreme Conditioner</h3><button onclick="addToCart('Repair Extreme Conditioner',11)">Add</button></div></div>
+
+<div class="product"><img src="images/cond11.jpg"><div class="info"><h3>Keratin Nourishing Conditioner</h3><button onclick="addToCart('Keratin Conditioner',10)">Add</button></div></div>
+<div class="product"><img src="images/cond12.jpg"><div class="info"><h3>Hydrating Conditioner</h3><button onclick="addToCart('Hydrating Conditioner',8)">Add</button></div></div>
+<div class="product"><img src="images/cond13.jpg"><div class="info"><h3>Macadamia Repair Conditioner</h3><button onclick="addToCart('Macadamia Conditioner',10)">Add</button></div></div>
+<div class="product"><img src="images/cond14.jpg"><div class="info"><h3>Argan Oil Conditioner</h3><button onclick="addToCart('Argan Conditioner',11)">Add</button></div></div>
+<div class="product"><img src="images/cond15.jpg"><div class="info"><h3>Soothing Conditioner</h3><button onclick="addToCart('Soothing Conditioner',8)">Add</button></div></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
