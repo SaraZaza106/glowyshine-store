@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GlowyShine</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f6f6f6;
+color:#222;
+}
+
+/* HEADER */
+.header{
+background:linear-gradient(90deg,#111,#333);
+color:white;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand{
+font-size:22px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.userBox{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.user{
+background:rgba(255,255,255,0.15);
+padding:6px 12px;
+border-radius:20px;
+font-size:14px;
+}
+
+a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+button{
+border:none;
+padding:6px 12px;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:40px 20px 10px;
+}
+
+.hero h1{
+font-size:32px;
+margin:0;
+}
+
+.hero p{
+color:#666;
+}
+
+/* CATEGORIES */
+.categories{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+padding:20px;
+}
+
+.cat{
+background:white;
+padding:20px 30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+cursor:pointer;
+transition:0.3s;
+font-weight:bold;
+}
+
+.cat:hover{
+transform:translateY(-5px);
+}
+
+/* PRODUCTS */
+.sectionTitle{
+text-align:center;
+margin-top:30px;
+font-size:22px;
+font-weight:bold;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.stars{
+color:gold;
+font-size:14px;
+margin:6px 0;
+}
+
+.addBtn{
+background:black;
+color:white;
+width:100%;
+padding:8px;
+border-radius:8px;
+}
+
+.addBtn:hover{
+opacity:0.85;
+}
+</style>
+</head>
+
+<body>
+
+<script src="app.js"></script>
+
+<!-- HEADER -->
+<div class="header">
+
+<div class="brand">✨ GlowyShine</div>
+
+<div class="userBox">
+<div class="user" id="username"></div>
+<a href="checkout.html">🛒 (<span id="count">0</span>)</a>
+<button onclick="logout()">Logout</button>
+</div>
+
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Hair Care That Shines ✨</h1>
+<p>Premium products for healthy & glowing hair</p>
+</div>
+
+<!-- CATEGORIES -->
+<div class="categories">
+
+<div class="cat" onclick="location.href='shampoo.html'">🧴 Shampoo</div>
+<div class="cat" onclick="location.href='conditioner.html'">💆‍♀️ Conditioner</div>
+<div class="cat" onclick="location.href='hairmask.html'">🫧 Hair Mask</div>
+<div class="cat" onclick="location.href='hairserum.html'">✨ Hair Serum</div>
+
+</div>
+
+<!-- TOP PRODUCTS -->
+<div class="sectionTitle">⭐ Best Sellers</div>
+
+<div class="products">
+
+<div class="card">
+<h4>Argan Shampoo</h4>
+<div class="stars">★★★★★</div>
+<button class="addBtn" onclick="addToCart('Argan Shampoo',11)">Add</button>
+</div>
+
+<div class="card">
+<h4>Keratin Mask</h4>
+<div class="stars">★★★★☆</div>
+<button class="addBtn" onclick="addToCart('Keratin Mask',10)">Add</button>
+</div>
+
+<div class="card">
+<h4>Biotin Conditioner</h4>
+<div class="stars">★★★★★</div>
+<button class="addBtn" onclick="addToCart('Biotin Conditioner',9)">Add</button>
+</div>
+
+<div class="card">
+<h4>Moroccan Serum</h4>
+<div class="stars">★★★★☆</div>
+<button class="addBtn" onclick="addToCart('Moroccan Serum',11)">Add</button>
+</div>
+
+</div>
+
+<script>
+
+// user
+let user = localStorage.getItem("user");
+if(!user){ window.location="login.html"; }
+
+document.getElementById("username").innerText="Hi, "+user;
+
+// logout
+function logout(){
+localStorage.removeItem("user");
+window.location="login.html";
+}
+
+</script>
+
+</body>
+</html>
